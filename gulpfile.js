@@ -24,6 +24,6 @@ exports.myTask4 = async () => {
 const gulp = require('gulp');
 
 exports.cloneFiles = async () => {
-    return gulp.src('app/*.html') 
-        .pipe(gulp.dest('public')); 
+    return gulp.src('app/*.*') 
+        .pipe(gulp.dest('public'));
 }
