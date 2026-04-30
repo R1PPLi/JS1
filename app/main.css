@@ -1,4 +1,4 @@
-/* Базові стилі та скидання налаштувань */
+/* Базові стилі */
 * {
     margin: 0;
     padding: 0;
@@ -6,72 +6,70 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: #f0f2f5;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 30px;
     background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    min-height: 90vh;
 }
 
-/* Стилі заголовка */
 header {
     text-align: center;
-    padding: 30px 0;
+    padding-bottom: 25px;
 }
 
 h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #2c3e50;
+    color: #1a73e8; /* Синій колір для акценту */
+    margin-bottom: 5px;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #7f8c8d;
+    color: #5f6368;
 }
 
-/* Основний контент */
 main {
-    flex: 1;
     text-align: center;
 }
 
-/* Стилі для зображення профілю */
+/* Стилі для фото профілю */
 .profile-image {
     width: 250px;
     height: 250px;
     margin: 0 auto 30px;
     border-radius: 50%;
     overflow: hidden;
+    border: 4px solid #1a73e8;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.profile-image svg {
+.profile-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Щоб фото не деформувалося */
 }
 
-/* Стилі для секції "Про мене" */
 .about-me {
     max-width: 600px;
     margin: 0 auto 30px;
-    padding: 0 20px;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #202124;
     margin-bottom: 15px;
-    font-size: 1.8rem;
+    border-bottom: 2px solid #e8f0fe;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .about-me p {
@@ -79,40 +77,21 @@ h2 {
     text-align: justify;
 }
 
-/* Контактна інформація */
 .contact-info {
-    background-color: #ecf0f1;
+    background-color: #f8f9fa;
     padding: 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    border-radius: 10px;
     display: inline-block;
+    text-align: left;
 }
 
 .contact-info p {
     margin-bottom: 10px;
 }
 
-/* Футер */
 footer {
     text-align: center;
-    padding: 20px 0;
-    color: #7f8c8d;
-    border-top: 1px solid #ecf0f1;
-    margin-top: 20px;
-}
-
-/* Адаптивність */
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .profile-image {
-        width: 200px;
-        height: 200px;
-    }
+    padding-top: 30px;
+    color: #70757a;
+    font-size: 0.9rem;
 }
