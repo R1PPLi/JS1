@@ -26,11 +26,15 @@ const cleanCSS = require('gulp-clean-css'); // Додали підключенн
 const uglify = require('gulp-uglify');     // Додали підключення
 
 // Твоя стара задача (можна залишити)
-exports.cloneFiles = async () => {
-    return gulp.src('app/**/*.*')
-        .pipe(gulp.dest('public'));
-}
 
+//ports.cloneFiles = async () => {
+//  return gulp.src('app/**/*.*')
+//      .pipe(gulp.dest('public'));
+//}
+exports.cloneFiles = async () => {
+    return gulp.src('app/**/*.{html,js}') 
+        .pipe(gulp.dest('public')); 
+}
 // НОВА ЗАДАЧА: Мініфікація CSS
 exports.minifyCSS = async () => {
     return gulp.src('app/**/*.css')   // Бере файли CSS з папки app
