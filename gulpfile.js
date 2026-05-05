@@ -22,8 +22,25 @@ exports.myTask4 = async () => {
 */
 
 const gulp = require('gulp');
+const cleanCSS = require('gulp-clean-css'); // Додали підключення
+const uglify = require('gulp-uglify');     // Додали підключення
 
+// Твоя стара задача (можна залишити)
 exports.cloneFiles = async () => {
-    return gulp.src('app/*.*') 
+    return gulp.src('app/**/*.*')
         .pipe(gulp.dest('public'));
+}
+
+// НОВА ЗАДАЧА: Мініфікація CSS
+exports.minifyCSS = async () => {
+    return gulp.src('app/**/*.css')   // Бере файли CSS з папки app
+        .pipe(cleanCSS())             // Стискає їх
+        .pipe(gulp.dest('public'));   // Кладе в папку public
+}
+
+// НОВА ЗАДАЧА: Мініфікація JS
+exports.minifyJS = async () => {
+    return gulp.src('app/**/*.js')    // Бере файли JS з папки app
+        .pipe(uglify())               // Стискає їх
+        .pipe(gulp.dest('public'));   // Кладе в папку public
 }
