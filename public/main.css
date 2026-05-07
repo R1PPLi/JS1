@@ -1,1 +1,97 @@
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Arial,sans-serif;line-height:1.6;color:#333;background-color:#f0f2f5}.container{max-width:800px;margin:30px auto;padding:30px;background-color:#fff;box-shadow:0 4px 20px rgba(0,0,0,.1);border-radius:15px;min-height:90vh}header{text-align:center;padding-bottom:25px}h1{font-size:2.5rem;color:#1a73e8;margin-bottom:5px}.subtitle{font-size:1.2rem;color:#5f6368}main{text-align:center}.profile-image{width:250px;height:250px;margin:0 auto 30px;border-radius:50%;overflow:hidden;border:4px solid #1a73e8;box-shadow:0 5px 15px rgba(0,0,0,.2)}.profile-image img{width:100%;height:100%;object-fit:cover}.about-me{max-width:600px;margin:0 auto 30px}h2{color:#202124;margin-bottom:15px;border-bottom:2px solid #e8f0fe;display:inline-block;padding-bottom:5px}.about-me p{margin-bottom:15px;text-align:justify}.contact-info{background-color:#f8f9fa;padding:20px;border-radius:10px;display:inline-block;text-align:left}.contact-info p{margin-bottom:10px}footer{text-align:center;padding-top:30px;color:#70757a;font-size:.9rem}
+/* Базові стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    min-height: 90vh;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1a73e8; /* Синій колір для акценту */
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #5f6368;
+}
+
+main {
+    text-align: center;
+}
+
+/* Стилі для фото профілю */
+.profile-image {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #1a73e8;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Щоб фото не деформувалося */
+}
+
+.about-me {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+h2 {
+    color: #202124;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e8f0fe;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.about-me p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.contact-info {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding-top: 30px;
+    color: #70757a;
+    font-size: 0.9rem;
+}

@@ -32,7 +32,8 @@ const uglify = require('gulp-uglify');     // Додали підключенн�
 //      .pipe(gulp.dest('public'));
 //}
 exports.cloneFiles = async () => {
-    return gulp.src('app/**/*.{html,js}') 
+ //   return gulp.src('app/**/*.{html,js}') 
+    return gulp.src('app/**/*.*')
         .pipe(gulp.dest('public')); 
 }
 // НОВА ЗАДАЧА: Мініфікація CSS
