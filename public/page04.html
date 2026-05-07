@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання jQuery - page04</title>
+    <link rel="stylesheet" href="stylespage04.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Контроль довжини тексту</h2>
+        <form>
+            <label>Максимум 25 символів:</label><br>
+            <textarea id="textarea" placeholder="Почніть вводити текст..."></textarea>
+            <p class="counter-text">
+                <span id="rchars">25</span> символів залишилося.
+            </p>
+        </form>
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var maxLength = 25;
+
+            $('#textarea').on('keyup', function() {
+                var textlen = maxLength - $(this).val().length;
+                $('#rchars').text(textlen);
+
+                if ($(this).val().length >= maxLength) {
+                    $(this).val($(this).val().substring(0, maxLength));
+                    $('#rchars').text(0);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
